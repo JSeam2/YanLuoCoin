@@ -1,5 +1,5 @@
 # Yan Luo Coin
-These coins intended to be use as hell money for 7th month. The coins are ERC20 tokens deployed on Ethereum. OpenZeppelin libraries are used and modified for the project. Refer to OpenZeppelin license [here](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/LICENSE)
+These coins intended to be use as hell money for 7th month. Yan Luo/Yama is the ruler of hell in Chinese mythology. So apparently, Chinese hell has some form of economy with their own hell notes. During the 7th month superstitious Chinese people burn hell notes as offerings to ghosts. Spooky af. So why not implement this as a smart contract to give the currency some software architecture.The coins are ERC20 tokens deployed on Ethereum. OpenZeppelin libraries are used and modified for the project. Refer to OpenZeppelin license [here](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/LICENSE)
 
 # Usage
 1. Buy tokens from the crowdsale contract. 
