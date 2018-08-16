@@ -390,6 +390,9 @@ contract CappedToken is MintableToken {
 
   uint256 public cap;
 
+  // mapping to see how many tokens did an address burn
+  mapping(address => uint256) valueBurned;
+
   constructor(uint256 _cap) public {
     require(_cap > 0);
     cap = _cap;
@@ -444,6 +447,7 @@ contract CappedToken is MintableToken {
     // sender's balance is greater than the totalSupply, which *should* be an assertion failure
 
     balances[_who] = balances[_who].sub(_value);
+    valueBurned[_who] = valueBurned[_who].add(_value);
     totalSupply_ = totalSupply_.sub(_value);
     emit Burn(_who, _value);
     emit Transfer(_who, address(0), _value);
