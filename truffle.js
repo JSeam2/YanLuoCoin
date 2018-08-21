@@ -11,8 +11,27 @@
  *     gasPrice: 10000000000,
  *   },
  */
+ var HDWalletProvider = require("truffle-hdwallet-provider");
+ var secrets = require("./secrets");
+ var rinkebyProvider = new HDWalletProvider(secrets.mnemonic, secrets.infuraURL);
 
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
+  networks: {
+    local: {
+      host: "localhost",
+      port: 8545,
+      network_id: "*",
+      solc: {
+        optimizer: {
+          enabled: true,
+          runs: 200
+        }    
+      }
+    },
+
+    rinkeby: {
+      provider: rinkebyProvider,
+      network_id: 4
+    }
+  }
 };
