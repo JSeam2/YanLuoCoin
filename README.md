@@ -15,3 +15,6 @@ Crowdsale address is deployed on rinkeby testnet at [0xbc1541ff9d113784dc67330ce
 # Deploy
 1. To deploy, deploy CappedToken.sol contract and input the capped token amount this is the total token amount + 18 zeros behind because we are using 18 decimal places. eg 100 tokens = 100 00000 00000 00000 000
 2. To prepare the crowdsale, deploy the Crowdsale.sol contract. Take note of the crowdsale contract address, mint and send tokens to the address.
+
+# Demo
+A live site can be found [here](https://www.yanluocoin.com)
